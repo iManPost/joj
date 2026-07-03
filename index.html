@@ -23,8 +23,8 @@ body {
   var player = new Clappr.Player({
           source: 'https://dash2.antik.sk/stream/nvidia_joj_sport/playlist_cenc.mpd',
           mimeType: 'application/dash+xml',
-          height: '400px',
-          width: '600px',
+          height: '100%',
+          width: '100%',
           autoPlay: true,
           plugins: [LevelSelector, DashShakaPlayback, Clappr.MediaControl],
           events: {onReady: function() {var plugin = this.getPlugin('click_to_pause'); plugin && plugin.disable();},},
